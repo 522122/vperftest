@@ -1,7 +1,7 @@
 
 <template>
   <div :class="{red: rng > .5, blue: rng <= .5}">
-    {{rng}}
+    I am not
   </div>
 </template>
 

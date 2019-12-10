@@ -1,12 +1,21 @@
 <template functional>
   <div :class="{red: props.rng > .5, blue: props.rng <= .5}">
-    {{props.rng}}
+    <div v-if="props.rng">I am functional
+      <functional />
+    </div>
+    <div v-else>
+      I am child
+    </div>
   </div>
 </template>
 
 <script>
-export default {
 
+import Functional from './Functional.vue'
+
+export default {
+  name: 'Functional',
+  components: Functional
 }
 </script>
 
